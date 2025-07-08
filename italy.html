@@ -26,14 +26,30 @@
             </div>
         </nav>
 
-        <nav aria-label="breadcrumb" class="bg-light">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="countries.html">Countries</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Italy</li>
-                </ol>
-            </div>
-        </nav> 
+    <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb bg-light rounded p-2">
+            <li class="breadcrumb-item"><a href="countries.html" class="text-decoration-none">Countries</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Italy</li>
+        </ol>
+    </nav>
+
+    <style>
+        .breadcrumb a {
+            color: #0d6efd; /* Bootstrap primary */
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "›"; /* nicer separator */
+            color: #6c757d;
+            padding: 0 0.5rem;
+        }
+    </style> 
 
     <style>
     .fixed-size-img {
