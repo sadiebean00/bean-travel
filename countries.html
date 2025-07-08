@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
             <div class="container-fluid">
@@ -24,13 +25,23 @@
                 </ul>
             </div>
         </nav>
+
+        <style>
+            .fixed-size-img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 50%;
+        }
+        </style>
+
         <div class="container mt-5">
             <h1 class="text-center mb-4">Countries Visited</h1>
             <div class="row text-center">
                 <div class="col-6 col-md-3 mb-4">
                     <a href="italy.html" class="text-decoration-none text-dark">
                         <div class="btn btn-light d-flex flex-column align-items-center">
-                            <img src="img/italy/italy-flag.jpeg" alt="italy-flag" class="rounded-circle mb-2" style="width: 60px; height: 60px;">
+                            <img src="img/italy/italy-flag.jpeg" alt="italy-flag" class=".fixed-size-img mb-2">
                             <span>Italy</span>
                         </div>
                     </a>
