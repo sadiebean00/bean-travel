@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Legoland Parks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#miniMenu" data-bs-offset="100" tabindex="0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
+            <div class="container-fluid">
+                <a class="navbar-brand">Bean Travels</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../countries.html">Countries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../theme-parks.html">Theme Parks</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb bg-light rounded p-2">
+            <li class="breadcrumb-item"><a href="../theme-parks.html" class="text-decoration-none">Theme Parks</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Legoland Parks</li>
+        </ol>
+    </nav>
+
+    <style>
+        .mini-menu {
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 0.75rem 0;
+        }
+
+        .mini-menu .nav-link {
+            font-weight: 500;
+            color: #0d6efd;
+            margin: 0 0.75rem;
+            transition: color 0.2s ease;
+        }
+
+        .mini-menu .nav-link.active {
+            color: #0a58ca;
+            border-bottom: 2px solid #0a58ca;
+        }
+
+        .breadcrumb a {
+            color: #0d6efd; /* Bootstrap primary */
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "›"; /* nicer separator */
+            color: #6c757d;
+            padding: 0 0.5rem;
+        }
+
+        .fixed-size-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+
+    <nav id="miniMenu" class="mini-menu nav justify-content-center">
+        <a href="#LLW" class="nav-link mx-3">Legoland Windsor</a>
+        <a href="#LLB" class="nav-link mx-3">Legoland Billund</a>
+    </nav>
+
+        <div class="container mt-5">
+            <section id="LLW" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Legoland Windsor</h1>
+            </section>
+
+            <section id="LLB" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Legoland Billund, March 2024</h1>
+                <p class="text-muted text-center fs-5">My first time visiting Legoland Billund</p>
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/legoland/billund-sign.jpg" alt="billund-sign" class="fixed-size-img mb-2">
+                        <span>Posing with the Legoland Billund Sign</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
