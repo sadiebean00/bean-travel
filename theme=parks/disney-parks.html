@@ -8,7 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#miniMenu" data-bs-offset="100" tabindex="0">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
             <div class="container-fluid">
                 <a class="navbar-brand">Bean Travels</a>
@@ -79,14 +79,14 @@
         }
     </style>
 
-    <nav class="mini-menu text-center">
+    <nav id="miniMenu" class="mini-menu nav justify-content-center">
         <a href="#DLJ" class="text-primary">Disneyland Japan</a>
         <a href="#TDS" class="text-primary">Tokyo DisneySea</a>
         <a href="#DLP" class="text-primary">Disneyland Paris</a>
     </nav>
 
         <div class="container mt-5">
-            <section id="DLJ" class="mb-5">
+            <section id="DLJ" class="mb-5" style="min-height: 400px;">
                 <h1 class="text-center mb-4">Disneyland Japan, August 2024</h1>
                 <p class="text-muted text-center fs-5">My first ever visit to Japan and Disneyland Japan.</p>
                 <div class="row">
@@ -97,7 +97,7 @@
                 </div>
             </section>
 
-            <section id="TDS" class="mb-5">
+            <section id="TDS" class="mb-5" style="min-height: 400px;">
                 <h1 class="text-center mb-4">TokyoDisney Sea, August 2024</h1>
                 <div class="row">
                     <div class="col-12 col-md-3 mb-4">
@@ -107,7 +107,7 @@
                 </div>
             </section>
 
-            <section id="DLP" class="mb-5">
+            <section id="DLP" class="mb-5" style="min-height: 400px;">
                 <h1 class="text-center mb-4">Disneyland Paris, July 2016</h1>
                 <div class="row">
                     <div class="col-12 col-md-3 mb-4">
