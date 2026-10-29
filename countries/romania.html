@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Romania</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#miniMenu" data-bs-offset="100" tabindex="0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
+            <div class="container-fluid">
+                <a class="navbar-brand">Bean Travels</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../countries.html">Countries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../theme-parks.html">Theme Parks</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <nav aria-label="breadcrumb" class="my-4">
+        <ol class="breadcrumb bg-light rounded p-2">
+            <li class="breadcrumb-item"><a href="../countries.html" class="text-decoration-none">Countries</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Romania</li>
+        </ol>
+    </nav>
+
+    <style>
+        .mini-menu {
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 0.75rem 0;
+        }
+
+        .mini-menu .nav-link {
+            font-weight: 500;
+            color: #0d6efd;
+            margin: 0 0.75rem;
+            transition: color 0.2s ease;
+        }
+
+        .mini-menu .nav-link.active {
+            color: #0a58ca;
+            border-bottom: 2px solid #0a58ca;
+        }
+
+        .breadcrumb a {
+            color: #0d6efd; /* Bootstrap primary */
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "›"; /* nicer separator */
+            color: #6c757d;
+            padding: 0 0.5rem;
+        }
+
+        .fixed-size-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+
+    <nav id="miniMenu" class="mini-menu nav justify-content-center">
+        <a href="#Bucharest" class="nav-link mx-3">Bucharest</a>
+        <a href="#Brasov" class="nav-link mx-3">Brasov</a>
+        <a href="#Sinaia" class="nav-link mx-3">Sinaia</a>
+        <a href="#Bran" class="nav-link mx-3">Bran</a>
+    </nav>
+
+        <div class="container mt-5">
+            <section id="Bucharest" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Bucharest, October 2025</h1>
+                <p class="text-muted text-center fs-5">An impromptu trip to Bucharest for my best friend's birthday.</p>
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/monestary.jpg" alt="Monestary" class="fixed-size-img mb-2">
+                        <span>The courtyard of the Church of Stavropoleos</span>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/romanian-bank.jpg" alt="banca de credit romania" class="fixed-size-img mb-2">
+                        <span>A very cute building for the Banca de Credit Romania.</span>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/piata-romana.jpg" alt="piata romania" class="fixed-size-img mb-2">
+                        <span>Of course I get a picture of their Metro station (or one of them) - Piata Romana.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Brasov" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Brasov, October 2025</h1>
+                <p class="text-muted text-center fs-5">A day trip to Brasov as part of a tour to two castles.</p>
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/brasov-fountain.jpg" alt="fountain in brasov" class="fixed-size-img mb-2">
+                        <span>A cute waterfall in Brasov's square.</span>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/black-castle.jpg" alt="black-castle" class="fixed-size-img mb-2">
+                        <span>Black castle, although it looks more grey!</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Sinaia" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Sinaia, October 2025</h1>
+                <p class="text-muted text-center fs-5">Part of our trip to Romania included a visit to Sinaia and Peles Castle!</p>
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/peles-castle-side.jpg" alt="Peles Castle" class="fixed-size-img mb-2">
+                        <span>Peles castle - a view from the side.</span>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/sinaia-mountains.jpg" alt="Sinaia Mountains" class="fixed-size-img mb-2">
+                        <span>Some mountains in Sinaia which gives me pure sound of music vibes.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Bran" class="mb-5" style="min-height: 400px;">
+                <h1 class="text-center mb-4">Bran, October 2025</h1>
+                <p class="text-muted text-center fs-5">We visited Bran and the castle of Dracula!</p>
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/bran-castle.jpg" alt="Bran Castle" class="fixed-size-img mb-2">
+                        <span>We visited Bran Castle, the home of Dracula!</span>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <img src="../img/romania/dracula-cape.jpg" alt="dracula-cape" class="fixed-size-img mb-2">
+                        <span>Blah Blah Blah! (I do not go Blah Blah Blah). I had Hotel Transylvania stuck in my head around the castle.</span>
+                    </div>
+                </div>
+            </section>
+    </body>
+</html>
